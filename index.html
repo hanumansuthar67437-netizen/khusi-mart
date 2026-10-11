@@ -8,10 +8,17 @@
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
         body { background: #f1f3f6; color: #212121; }
-        header { background: #2874f0; color: white; padding: 12px; font-size: 18px; font-weight: bold; }
+        
+        /* Top Flipkart-style Header Bar with Help and Orders */
+        .top-bar { background: #2874f0; color: white; display: flex; justify-content: space-between; align-items: center; padding: 10px 15px; font-size: 14px; font-weight: bold; }
+        .top-bar .logo { display: flex; align-items: center; gap: 5px; font-size: 16px; }
+        .top-links { display: flex; gap: 15px; font-size: 12px; }
+        .top-links a { color: white; text-decoration: none; }
+
         .banner { background: linear-gradient(135deg, #2874f0, #ff3366); color: white; text-align: center; padding: 15px; }
         .banner h1 { font-size: 17px; margin-bottom: 4px; }
         .banner p { font-size: 11px; }
+        
         .container { padding: 10px; max-width: 800px; margin: auto; }
         .title { font-size: 14px; font-weight: bold; margin: 10px 0; color: #2874f0; background: white; padding: 8px; border-left: 4px solid #2874f0; }
         .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
@@ -23,21 +30,35 @@
         .btns { display: flex; gap: 4px; margin-top: 6px; }
         .btn { flex: 1; background: #ff9f00; color: white; padding: 6px; text-decoration: none; border-radius: 3px; font-weight: bold; font-size: 10px; text-align: center; }
         .share { background: #25D366; }
+        
         .box { background: white; padding: 12px; border-radius: 6px; margin-top: 15px; }
         .box h3 { color: #2874f0; font-size: 14px; margin-bottom: 6px; }
         .box p { font-size: 11px; line-height: 1.4; color: #555; }
+        
         footer { background: #172337; color: white; text-align: center; padding: 12px; font-size: 11px; margin-top: 20px; }
     </style>
 </head>
 <body>
-    <header>🛒 Khusi Mart</header>
+
+    <!-- Flipkart-style Top Bar with Help and Orders -->
+    <div class="top-bar">
+        <div class="logo">🛒 Khusi Mart</div>
+        <div class="top-links">
+            <a href="tel:9960337610">📞 Help</a>
+            <a href="https://api.whatsapp.com/send?text=Hello%20Khusi%20Mart,%20I%20want%20to%20check%20my%20order." target="_blank">📦 Orders</a>
+        </div>
+    </div>
+
     <div class="banner">
         <h1>Khusi Mart Mega Store</h1>
         <p>Best Quality Products at Lowest Prices!</p>
     </div>
+
     <div class="container">
         <div class="title">🔥 ट्रेंडिंग मेगा डील्स</div>
         <div class="grid">
+            
+            <!-- Product 1: Denver Deodorant with your Meesho link -->
             <div class="card">
                 <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=400&q=80" alt="Denver">
                 <div>
@@ -49,6 +70,8 @@
                     <a href="https://api.whatsapp.com/send?text=Check%20Denver%20on%20Khusi%20Mart:%20₹149%0Ahttps://www.meesho.com/s/p/2t794r" target="_blank" class="btn share">Share 🔗</a>
                 </div>
             </div>
+
+            <!-- Product 2: Smartwatch -->
             <div class="card">
                 <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400&q=80" alt="Smartwatch">
                 <div>
@@ -60,6 +83,8 @@
                     <a href="https://api.whatsapp.com/send?text=Check%20Watch%20on%20Khusi%20Mart:%20₹299%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share">Share 🔗</a>
                 </div>
             </div>
+
+            <!-- Product 3: Neckband -->
             <div class="card">
                 <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&q=80" alt="Neckband">
                 <div>
@@ -71,6 +96,8 @@
                     <a href="https://api.whatsapp.com/send?text=Check%20Neckband%20on%20Khusi%20Mart:%20₹249%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share">Share 🔗</a>
                 </div>
             </div>
+
+            <!-- Product 4: Shoes -->
             <div class="card">
                 <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80" alt="Shoes">
                 <div>
@@ -82,7 +109,9 @@
                     <a href="https://api.whatsapp.com/send?text=Check%20Shoes%20on%20Khusi%20Mart:%20₹399%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share">Share 🔗</a>
                 </div>
             </div>
+
         </div>
+
         <div class="box">
             <h3>👤 CEO & Founder (संस्थापक)</h3>
             <p><strong>Store Name:</strong> Khusi Mart</p>
@@ -90,9 +119,10 @@
             <p><strong>Helpline:</strong> <a href="tel:9960337610" style="color:#2874f0; text-decoration:none; font-weight:bold;">+91 9960337610</a></p>
         </div>
     </div>
+
     <footer>
         <p>&copy; 2026 Khusi Mart. All Rights Reserved.</p>
     </footer>
+
 </body>
 </html>
-```
