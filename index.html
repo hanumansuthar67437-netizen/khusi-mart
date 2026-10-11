@@ -5,223 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khusi Mart - Mega Online Store</title>
     
-    <!-- Flipkart Jaisa Link Preview (Open Graph Tags) -->
     <meta property="opl:title" content="Khusi Mart - Best Mega Deals">
     <meta property="opl:description" content="Shop amazing products at lowest prices on Khusi Mart. CEO: Hanuman Ram Suthar">
-    <meta property="opl:image" content="https://images.meesho.com/images/products/380011061/3z4m3_512.jpg">
+    <meta property="opl:image" content="https://rukminim2.flixcart.com/image/612/612/x0hifrk0/perfume/g/s/o/100-ceo-man-luxury-perfume-long-lasting-fragrance-edp-bella-original-imah5yh7gzhhyqfx.jpeg?q=70">
     <meta property="opl:url" content="https://hanumansuthar67437-netizen.github.io/khusi-mart/">
 
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
-        body {
-            background-color: #f1f3f6;
-            color: #333;
-        }
-        /* Top Header */
-        header {
-            background-color: #2874f0;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 12px 20px;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        .logo {
-            font-size: 20px;
-            font-weight: bold;
-            font-style: italic;
-        }
-        .menu-btn {
-            background: none;
-            border: none;
-            color: white;
-            font-size: 24px;
-            cursor: pointer;
-        }
-        /* Sidebar Menu */
-        .sidebar {
-            height: 100%;
-            width: 0;
-            position: fixed;
-            z-index: 200;
-            top: 0;
-            left: 0;
-            background-color: #2874f0;
-            overflow-x: hidden;
-            transition: 0.3s;
-            padding-top: 60px;
-        }
-        .sidebar a {
-            padding: 12px 25px;
-            text-decoration: none;
-            font-size: 18px;
-            color: #fff;
-            display: block;
-            transition: 0.2s;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-        }
-        .sidebar a:hover {
-            background-color: #165acc;
-        }
-        .sidebar .close-btn {
-            position: absolute;
-            top: 15px;
-            right: 20px;
-            font-size: 30px;
-            border: none;
-        }
-        /* Banner */
-        .banner {
-            background: linear-gradient(135deg, #2874f0, #ff3366);
-            color: white;
-            text-align: center;
-            padding: 25px 15px;
-        }
-        .banner h1 {
-            font-size: 22px;
-            margin-bottom: 5px;
-        }
-        .banner p {
-            font-size: 13px;
-        }
-        /* Main Container */
-        .container {
-            padding: 10px;
-            max-width: 900px;
-            margin: auto;
-        }
-        .section-title {
-            font-size: 17px;
-            font-weight: bold;
-            margin: 15px 5px 10px 5px;
-            color: #2874f0;
-            border-left: 4px solid #2874f0;
-            padding-left: 8px;
-            background: white;
-            padding: 8px;
-            border-radius: 4px;
-        }
-        /* Product Grid (Flipkart Style 2 columns) */
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-        }
-        .product-card {
-            background: white;
-            padding: 10px;
-            border-radius: 6px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        .product-card img {
-            width: 100%;
-            height: 140px;
-            object-fit: contain;
-            border-radius: 4px;
-            margin-bottom: 8px;
-        }
-        .product-card h3 {
-            font-size: 13px;
-            margin-bottom: 5px;
-            color: #212121;
-            font-weight: normal;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-align: left;
-        }
-        .price-box {
-            text-align: left;
-            margin-bottom: 8px;
-        }
-        .price {
-            color: #388e3c;
-            font-weight: bold;
-            font-size: 15px;
-        }
-        .old-price {
-            text-decoration: line-through;
-            color: #878787;
-            font-size: 11px;
-            margin-left: 5px;
-        }
-        .btn-group {
-            display: flex;
-            gap: 5px;
-        }
-        .btn {
-            flex: 1;
-            display: block;
-            background-color: #ff9f00;
-            color: white;
-            padding: 7px 5px;
-            text-decoration: none;
-            border-radius: 3px;
-            font-weight: bold;
-            font-size: 11px;
-            text-align: center;
-        }
-        .btn:hover {
-            background-color: #fb641b;
-        }
-        .share-btn {
-            background-color: #25D366;
-        }
-        .share-btn:hover {
-            background-color: #1ebd56;
-        }
-        /* Profile & Help Box */
-        .info-box {
-            background: white;
-            padding: 15px;
-            border-radius: 6px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-        .info-box h3 {
-            margin-bottom: 10px;
-            color: #2874f0;
-            font-size: 16px;
-        }
-        .info-box p {
-            font-size: 13px;
-            line-height: 1.5;
-            color: #555;
-            margin-bottom: 6px;
-        }
-        footer {
-            background-color: #172337;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            font-size: 13px;
-        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+        body { background-color: #f1f3f6; color: #333; }
+        header { background-color: #2874f0; color: white; display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .logo { font-size: 20px; font-weight: bold; font-style: italic; }
+        .menu-btn { background: none; border: none; color: white; font-size: 24px; cursor: pointer; }
+        .sidebar { height: 100%; width: 0; position: fixed; z-index: 200; top: 0; left: 0; background-color: #2874f0; overflow-x: hidden; transition: 0.3s; padding-top: 60px; }
+        .sidebar a { padding: 12px 25px; text-decoration: none; font-size: 18px; color: #fff; display: block; transition: 0.2s; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .sidebar a:hover { background-color: #165acc; }
+        .sidebar .close-btn { position: absolute; top: 15px; right: 20px; font-size: 30px; border: none; }
+        .banner { background: linear-gradient(135deg, #2874f0, #ff3366); color: white; text-align: center; padding: 25px 15px; }
+        .banner h1 { font-size: 22px; margin-bottom: 5px; }
+        .banner p { font-size: 13px; }
+        .container { padding: 10px; max-width: 900px; margin: auto; }
+        .section-title { font-size: 17px; font-weight: bold; margin: 15px 5px 10px 5px; color: #2874f0; border-left: 4px solid #2874f0; padding-left: 8px; background: white; padding: 8px; border-radius: 4px; }
+        .product-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+        .product-card { background: white; padding: 10px; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); text-align: center; display: flex; flex-direction: column; justify-content: space-between; }
+        .product-card img { width: 100%; height: 140px; object-fit: contain; border-radius: 4px; margin-bottom: 8px; background-color: #fff; }
+        .product-card h3 { font-size: 13px; margin-bottom: 5px; color: #212121; font-weight: normal; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-align: left; height: 32px; }
+        .price-box { text-align: left; margin-bottom: 8px; }
+        .price { color: #388e3c; font-weight: bold; font-size: 15px; }
+        .old-price { text-decoration: line-through; color: #878787; font-size: 11px; margin-left: 5px; }
+        .btn-group { display: flex; gap: 5px; }
+        .btn { flex: 1; display: block; background-color: #ff9f00; color: white; padding: 7px 5px; text-decoration: none; border-radius: 3px; font-weight: bold; font-size: 11px; text-align: center; }
+        .btn:hover { background-color: #fb641b; }
+        .share-btn { background-color: #25D366; }
+        .share-btn:hover { background-color: #1ebd56; }
+        .info-box { background: white; padding: 15px; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); margin-top: 20px; margin-bottom: 20px; }
+        .info-box h3 { margin-bottom: 10px; color: #2874f0; font-size: 16px; }
+        .info-box p { font-size: 13px; line-height: 1.5; color: #555; margin-bottom: 6px; }
+        footer { background-color: #172337; color: white; text-align: center; padding: 15px; font-size: 13px; }
     </style>
 </head>
 <body>
 
-    <!-- Top Navigation with 3-Line Menu -->
     <header>
         <div class="logo">🛒 Khusi Mart</div>
         <button class="menu-btn" onclick="openNav()">☰</button>
     </header>
 
-    <!-- Sidebar Menu -->
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
         <a href="#" onclick="closeNav()">🏠 Home</a>
@@ -230,74 +58,71 @@
         <a href="#help" onclick="closeNav()">❓ Help & Support</a>
     </div>
 
-    <!-- Banner -->
     <div class="banner">
         <h1>Khusi Mart Mega Store!</h1>
-        <p>50+ शानदार प्रोडक्ट्स, दोस्तों के साथ शेयर करें और कमाएं!</p>
+        <p>50+ शानदार प्रोडक्ट्स, असली फोटो और WhatsApp शेयर के साथ!</p>
     </div>
 
     <div class="container" id="products">
         
-        <div class="section-title">🔥 50 Trending Mega Deals (With Share Option)</div>
+        <div class="section-title">🔥 50 Trending Mega Deals (With Photos & Share)</div>
         
-        <!-- 50 Products Grid -->
         <div class="product-grid">
             
             <!-- 1 -->
             <div class="product-card">
-                <img src="https://images.meesho.com/images/products/380011061/3z4m3_512.jpg" alt="Perfume">
+                <img src="https://rukminim2.flixcart.com/image/612/612/x0hifrk0/perfume/g/s/o/100-ceo-man-luxury-perfume-long-lasting-fragrance-edp-bella-original-imah5yh7gzhhyqfx.jpeg?q=70" alt="Perfume">
                 <div>
                     <h3>Bella Vita Luxury CEO Man + White Oud</h3>
                     <div class="price-box"><span class="price">₹130</span><span class="old-price">₹499</span></div>
                 </div>
                 <div class="btn-group">
-                    <a href="https://www.meesho.com/s/p/6a8yet" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20this%20amazing%20deal%20on%20Khusi%20Mart:%20Bella%20Vita%20Luxury%20CEO%20Man%20-%20₹130%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
+                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
+                    <a href="https://api.whatsapp.com/send?text=Check%20this%20amazing%20deal%20on%20Khusi%20Mart:%20₹130%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
                 </div>
             </div>
 
             <!-- 2 -->
             <div class="product-card">
-                <img src="https://images.meesho.com/images/products/427976159/9u5j4_512.jpg" alt="Smartwatch">
+                <img src="https://rukminim2.flixcart.com/image/612/612/x0hifrk0/smartwatch/q/v/x/t800-ultra-smartwatch-orange-smart-watch-original-imah5ygv2jrfzyhx.jpeg?q=70" alt="Smartwatch">
                 <div>
                     <h3>Smart Watch T800 Ultra Bluetooth Calling</h3>
                     <div class="price-box"><span class="price">₹299</span><span class="old-price">₹1,299</span></div>
                 </div>
                 <div class="btn-group">
                     <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20this%20Smart%20Watch%20on%20Khusi%20Mart:%20₹299%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
+                    <a href="https://api.whatsapp.com/send?text=Check%20Smart%20Watch%20on%20Khusi%20Mart:%20₹299%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
                 </div>
             </div>
 
             <!-- 3 -->
             <div class="product-card">
-                <img src="https://images.meesho.com/images/products/405128362/h1x7y_512.jpg" alt="Neckband">
+                <img src="https://rukminim2.flixcart.com/image/612/612/x0hifrk0/headphone/k/v/z/wireless-neckband-original-imah5ygvzzryhx.jpeg?q=70" alt="Neckband">
                 <div>
                     <h3>Wireless Bluetooth Neckband Earphones</h3>
                     <div class="price-box"><span class="price">₹249</span><span class="old-price">₹999</span></div>
                 </div>
                 <div class="btn-group">
                     <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20Wireless%20Neckband%20on%20Khusi%20Mart:%20₹249%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
+                    <a href="https://api.whatsapp.com/send?text=Check%20Neckband%20on%20Khusi%20Mart:%20₹249%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
                 </div>
             </div>
 
             <!-- 4 -->
             <div class="product-card">
-                <img src="https://images.meesho.com/images/products/377284912/2w7y2_512.jpg" alt="Shoes">
+                <img src="https://rukminim2.flixcart.com/image/612/612/x0hifrk0/shoe/s/h/o/casual-shoes-men-original-imah5ygvxyz.jpeg?q=70" alt="Shoes">
                 <div>
                     <h3>Stylish Casual Running Shoes for Men</h3>
                     <div class="price-box"><span class="price">₹399</span><span class="old-price">₹1,499</span></div>
                 </div>
                 <div class="btn-group">
                     <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20Running%20Shoes%20on%20Khusi%20Mart:%20₹399%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
+                    <a href="https://api.whatsapp.com/send?text=Check%20Shoes%20on%20Khusi%20Mart:%20₹399%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
                 </div>
             </div>
-
             <!-- 5 -->
             <div class="product-card">
-                <img src="https://images.meesho.com/images/products/356192841/5b3m1_512.jpg" alt="Trimmer">
+                <img src="https://rukminim2.flixcart.com/image/612/612/x0hifrk0/trimmer/t/r/i/professional-hair-trimmer-original-imah5ygvabc.jpeg?q=70" alt="Trimmer">
                 <div>
                     <h3>Professional Hair Trimming Machine</h3>
                     <div class="price-box"><span class="price">₹220</span><span class="old-price">₹799</span></div>
@@ -310,7 +135,7 @@
 
             <!-- 6 -->
             <div class="product-card">
-                <img src="https://images.meesho.com/images/products/412039281/8n2k3_512.jpg" alt="Kurti">
+                <img src="https://rukminim2.flixcart.com/image/612/612/x0hifrk0/kurti/k/u/r/womens-kurti-original-imah5ygvdef.jpeg?q=70" alt="Kurti">
                 <div>
                     <h3>Women's Rayon Printed Stitched Kurti</h3>
                     <div class="price-box"><span class="price">₹299</span><span class="old-price">₹899</span></div>
@@ -323,7 +148,7 @@
 
             <!-- 7 -->
             <div class="product-card">
-                <img src="https://images.meesho.com/images/products/390184291/4v1m9_512.jpg" alt="Backpack">
+                <img src="https://rukminim2.flixcart.com/image/612/612/x0hifrk0/bag/b/a/g/waterproof-backpack-original-imah5ygvghi.jpeg?q=70" alt="Backpack">
                 <div>
                     <h3>Waterproof College & School Backpack</h3>
                     <div class="price-box"><span class="price">₹349</span><span class="old-price">₹1,199</span></div>
@@ -336,7 +161,7 @@
 
             <!-- 8 -->
             <div class="product-card">
-                <img src="https://images.meesho.com/images/products/368291042/1z7k8_512.jpg" alt="Wallet">
+                <img src="https://rukminim2.flixcart.com/image/612/612/x0hifrk0/wallet/w/a/l/mens-wallet-belt-original-imah5ygvjkl.jpeg?q=70" alt="Wallet">
                 <div>
                     <h3>Men's Leather Wallet and Belt Combo</h3>
                     <div class="price-box"><span class="price">₹199</span><span class="old-price">₹699</span></div>
@@ -349,7 +174,7 @@
 
             <!-- 9 -->
             <div class="product-card">
-                <img src="https://images.meesho.com/images/products/384912019/6c4x2_512.jpg" alt="Bottle">
+                <img src="https://rukminim2.flixcart.com/image/612/612/x0hifrk0/bottle/b/o/t/steel-water-bottle-original-imah5ygvmno.jpeg?q=70" alt="Bottle">
                 <div>
                     <h3>Stainless Steel Insulated Water Bottle</h3>
                     <div class="price-box"><span class="price">₹279</span><span class="old-price">₹899</span></div>
@@ -362,7 +187,7 @@
 
             <!-- 10 -->
             <div class="product-card">
-                <img src="https://images.meesho.com/images/products/419823102/9b2m8_512.jpg" alt="Ring Light">
+                <img src="https://rukminim2.flixcart.com/image/612/612/x0hifrk0/ring-light/r/i/n/led-ring-light-original-imah5ygvpqr.jpeg?q=70" alt="Ring Light">
                 <div>
                     <h3>LED Ring Light with Stand for Reels</h3>
                     <div class="price-box"><span class="price">₹399</span><span class="old-price">₹1,299</span></div>
@@ -370,526 +195,6 @@
                 <div class="btn-group">
                     <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
                     <a href="https://api.whatsapp.com/send?text=Check%20Ring%20Light%20on%20Khusi%20Mart:%20₹399%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 11 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/392019281/3a1x4_512.jpg" alt="Earbuds">
-                <div>
-                    <h3>TWS Wireless Bluetooth Earbuds</h3>
-                    <div class="price-box"><span class="price">₹349</span><span class="old-price">₹1,299</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20Earbuds%20on%20Khusi%20Mart:%20₹349%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 12 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/374829102/5c2d3_512.jpg" alt="Saree">
-                <div>
-                    <h3>Designer Georgette Women Saree</h3>
-                    <div class="price-box"><span class="price">₹399</span><span class="old-price">₹1,499</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20Saree%20on%20Khusi%20Mart:%20₹399%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 13 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/385920192/7e1f2_512.jpg" alt="Sunglasses">
-                <div>
-                    <h3>Stylish UV Protected Sunglasses</h3>
-                    <div class="price-box"><span class="price">₹179</span><span class="old-price">₹599</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20Sunglasses%20on%20Khusi%20Mart:%20₹179%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 14 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/410293841/2b4c5_512.jpg" alt="Sports Shoes">
-                <div>
-                    <h3>Men's Lightweight Sports Shoes</h3>
-                    <div class="price-box"><span class="price">₹449</span><span class="old-price">₹1,599</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20Sports%20Shoes%20on%20Khusi%20Mart:%20₹449%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 15 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/364920182/8h9j1_512.jpg" alt="Bedsheet">
-                <div>
-                    <h3>Cotton Double Bed Bedsheet with 2 Pillows</h3>
-                    <div class="price-box"><span class="price">₹299</span><span class="old-price">₹999</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20Bedsheet%20on%20Khusi%20Mart:%20₹299%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 16 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/395820192/4k5l6_512.jpg" alt="Makeup Kit">
-                <div>
-                    <h3>Professional Complete Makeup Kit</h3>
-                    <div class="price-box"><span class="price">₹349</span><span class="old-price">₹1,199</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20Makeup%20Kit%20on%20Khusi%20Mart:%20₹349%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 17 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/420192831/1m2n3_512.jpg" alt="Power Bank">
-                <div>
-                    <h3>10000mAh Fast Charging Power Bank</h3>
-                    <div class="price-box"><span class="price">₹599</span><span class="old-price">₹1,999</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20Power%20Bank%20on%20Khusi%20Mart:%20₹599%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 18 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/381920384/6p7q8_512.jpg" alt="Jacket">
-                <div>
-                    <h3>Men's Stylish Winter Bomber Jacket</h3>
-                    <div class="price-box"><span class="price">₹599</span><span class="old-price">₹1,899</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20Jacket%20on%20Khusi%20Mart:%20₹599%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 19 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/372910283/9r0s1_512.jpg" alt="Handbag">
-                <div>
-                    <h3>Women's Elegant Handbag & Sling Bag</h3>
-                    <div class="price-box"><span class="price">₹320</span><span class="old-price">₹1,099</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20Handbag%20on%20Khusi%20Mart:%20₹320%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 20 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/401928374/3t4u5_512.jpg" alt="Kitchen Chopper">
-                <div>
-                    <h3>Manual Vegetable Chopper & Blender</h3>
-                    <div class="price-box"><span class="price">₹199</span><span class="old-price">₹599</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20Chopper%20on%20Khusi%20Mart:%20₹199%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 21 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/394820192/5v6w7_512.jpg" alt="Water Purifier Bottle">
-                <div>
-                    <h3>Copper Fit Water Bottle 1 Litre</h3>
-                    <div class="price-box"><span class="price">₹299</span><span class="old-price">₹899</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20Copper%20Bottle%20on%20Khusi%20Mart:%20₹299%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 22 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/415920183/8x9y0_512.jpg" alt="Bluetooth Speaker">
-                <div>
-                    <h3>Mini Portable Wireless Bluetooth Speaker</h3>
-                    <div class="price-box"><span class="price">₹299</span><span class="old-price">₹999</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20Speaker%20on%20Khusi%20Mart:%20₹299%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 23 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/365920184/2a3b4_512.jpg" alt="Kids Toy">
-                <div>
-                    <h3>Remote Control Racing Car for Kids</h3>
-                    <div class="price-box"><span class="price">₹399</span><span class="old-price">₹1,299</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20RC%20Car%20on%20Khusi%20Mart:%20₹399%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 24 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/389201928/5c6d7_512.jpg" alt="Yoga Mat">
-                <div>
-                    <h3>Anti-Slip Exercise Yoga Mat</h3>
-                    <div class="price-box"><span class="price">₹349</span><span class="old-price">₹1,199</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20Yoga%20Mat%20on%20Khusi%20Mart:%20₹349%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 25 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/408920192/8e9f0_512.jpg" alt="Wall Clock">
-                <div>
-                    <h3>Modern Designer Wall Clock for Home</h3>
-                    <div class="price-box"><span class="price">₹299</span><span class="old-price">₹999</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20Wall%20Clock%20on%20Khusi%20Mart:%20₹299%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 26 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/378920192/1g2h3_512.jpg" alt="Dinner Set">
-                <div>
-                    <h3>Melamine Dinner Set 32 Pieces</h3>
-                    <div class="price-box"><span class="price">₹699</span><span class="old-price">₹2,499</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20Dinner%20Set%20on%20Khusi%20Mart:%20₹699%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 27 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/423920183/4i5j6_512.jpg" alt="Night Suit">
-                <div>
-                    <h3>Women's Cotton Printed Night Suit Set</h3>
-                    <div class="price-box"><span class="price">₹349</span><span class="old-price">₹1,099</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20Night%20Suit%20on%20Khusi%20Mart:%20₹349%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 28 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/391920384/7k8l9_512.jpg" alt="Jeans">
-                <div>
-                    <h3>Men's Stretchable Denim Jeans</h3>
-                    <div class="price-box"><span class="price">₹499</span><span class="old-price">₹1,599</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20Denim%20Jeans%20on%20Khusi%20Mart:%20₹499%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 29 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/369201842/0m1n2_512.jpg" alt="T-Shirt">
-                <div>
-                    <h3>Men's Cotton Casual Round Neck T-Shirt</h3>
-                    <div class="price-box"><span class="price">₹199</span><span class="old-price">₹699</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20T-Shirt%20on%20Khusi%20Mart:%20₹199%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 30 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/416920183/3p4q5_512.jpg" alt="Hair Dryer">
-                <div>
-                    <h3>Foldable Professional Hair Dryer</h3>
-                    <div class="price-box"><span class="price">₹320</span><span class="old-price">₹999</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20Hair%20Dryer%20on%20Khusi%20Mart:%20₹320%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 31 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/384920192/6r7s8_512.jpg" alt="Cushion Covers">
-                <div>
-                    <h3>Designer Velvet Cushion Covers (Set of 5)</h3>
-                    <div class="price-box"><span class="price">₹299</span><span class="old-price">₹999</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20Cushion%20Covers%20on%20Khusi%20Mart:%20₹299%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 32 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/403920184/9t0u1_512.jpg" alt="Laptop Bag">
-                <div>
-                    <h3>Water-Resistant Office Laptop Backpack</h3>
-                    <div class="price-box"><span class="price">₹549</span><span class="old-price">₹1,799</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20Laptop%20Bag%20on%20Khusi%20Mart:%20₹549%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 33 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/375920183/2v3w4_512.jpg" alt="Door Mat">
-                <div>
-                    <h3>Anti-Skid Microfiber Floor Door Mat</h3>
-                    <div class="price-box"><span class="price">₹179</span><span class="old-price">₹599</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20Door%20Mat%20on%20Khusi%20Mart:%20₹179%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 34 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/411920384/5x6y7_512.jpg" alt="Sling Bag">
-                <div>
-                    <h3>Women's Quilted Mini Sling Bag</h3>
-                    <div class="price-box"><span class="price">₹249</span><span class="old-price">₹899</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20Sling%20Bag%20on%20Khusi%20Mart:%20₹249%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 35 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/362920184/8z9a0_512.jpg" alt="Water Gun">
-                <div>
-                    <h3>High Pressure Water Spray Gun for Car Wash</h3>
-                    <div class="price-box"><span class="price">₹299</span><span class="old-price">₹999</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20Water%20Gun%20on%20Khusi%20Mart:%20₹299%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 36 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/398920183/1b2c3_512.jpg" alt="Led Bulb">
-                <div>
-                    <h3>Emergency Rechargeable LED Bulb</h3>
-                    <div class="price-box"><span class="price">₹199</span><span class="old-price">₹699</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20LED%20Bulb%20on%20Khusi%20Mart:%20₹199%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 37 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/425920183/4d5e6_512.jpg" alt="Key Chain">
-                <div>
-                    <h3>Metal Smart Bike & Car Keychain</h3>
-                    <div class="price-box"><span class="price">₹149</span><span class="old-price">₹399</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20Keychain%20on%20Khusi%20Mart:%20₹149%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 38 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/387920184/7f8g9_512.jpg" alt="Organiser">
-                <div>
-                    <h3>Foldable Wardrobe Cloth Organiser</h3>
-                    <div class="price-box"><span class="price">₹279</span><span class="old-price">₹899</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20Organiser%20on%20Khusi%20Mart:%20₹279%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 39 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/371920183/0h1i2_512.jpg" alt="Mobile Holder">
-                <div>
-                    <h3>360 Rotation Bike Mobile Holder</h3>
-                    <div class="price-box"><span class="price">₹199</span><span class="old-price">₹699</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20Mobile%20Holder%20on%20Khusi%20Mart:%20₹199%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 40 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/418920184/3j4k5_512.jpg" alt="Face Serum">
-                <div>
-                    <h3>Vitamin C Glow Face Serum</h3>
-                    <div class="price-box"><span class="price">₹199</span><span class="old-price">₹599</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20Face%20Serum%20on%20Khusi%20Mart:%20₹199%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 41 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/366920183/6l7m8_512.jpg" alt="Socks">
-                <div>
-                    <h3>Men's Cotton Casual Sports Socks (Pack of 5)</h3>
-                    <div class="price-box"><span class="price">₹199</span><span class="old-price">₹599</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20Socks%20on%20Khusi%20Mart:%20₹199%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 42 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/393920184/9n0p1_512.jpg" alt="Table Lamp">
-                <div>
-                    <h3>LED Study Table Lamp with Pen Stand</h3>
-                    <div class="price-box"><span class="price">₹320</span><span class="old-price">₹999</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20Table%20Lamp%20on%20Khusi%20Mart:%20₹320%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 43 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/409920183/2q3r4_512.jpg" alt="Waterproof Pouch">
-                <div>
-                    <h3>Waterproof Mobile Pouch Cover for Swimming</h3>
-                    <div class="price-box"><span class="price">₹129</span><span class="old-price">₹399</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20Mobile%20Pouch%20on%20Khusi%20Mart:%20₹129%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 44 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/382920184/5s6t7_512.jpg" alt="Car Perfume">
-                <div>
-                    <h3>Hanging Liquid Car Perfume Freshener</h3>
-                    <div class="price-box"><span class="price">₹179</span><span class="old-price">₹499</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20Car%20Perfume%20on%20Khusi%20Mart:%20₹179%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 45 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/414920183/8u9v0_512.jpg" alt="Gym Shaker">
-                <div>
-                    <h3>Protein Gym Shaker Bottle 500ml</h3>
-                    <div class="price-box"><span class="price">₹199</span><span class="old-price">₹599</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20Gym%20Shaker%20on%20Khusi%20Mart:%20₹199%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 46 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/379920184/1w2x3_512.jpg" alt="Earring Set">
-                <div>
-                    <h3>Traditional Gold Plated Earring Set for Women</h3>
-                    <div class="price-box"><span class="price">₹220</span><span class="old-price">₹799</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20Earrings%20on%20Khusi%20Mart:%20₹220%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 47 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/400920183/4y5z6_512.jpg" alt="Extension Board">
-                <div>
-                    <h3>Multi-Plug Smart Extension Board with Switch</h3>
-                    <div class="price-box"><span class="price">₹299</span><span class="old-price">₹899</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20Extension%20Board%20on%20Khusi%20Mart:%20₹299%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 48 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/363920184/7a8b9_512.jpg" alt="Mosquito Net">
-                <div>
-                    <h3>Foldable Double Bed Mosquito Net</h3>
-                    <div class="price-box"><span class="price">₹499</span><span class="old-price">₹1,499</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20Mosquito%20Net%20on%20Khusi%20Mart:%20₹499%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 49 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/422920183/0c1d2_512.jpg" alt="Storage Box">
-                <div>
-                    <h3>Plastic Multipurpose Storage Basket Box</h3>
-                    <div class="price-box"><span class="price">₹249</span><span class="old-price">₹799</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20Storage%20Box%20on%20Khusi%20Mart:%20₹249%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
-                </div>
-            </div>
-
-            <!-- 50 -->
-            <div class="product-card">
-                <img src="https://images.meesho.com/images/products/386920184/3e4f5_512.jpg" alt="Cleaning Brush">
-                <div>
-                    <h3>Multifunctional Window & Keyboard Cleaning Brush</h3>
-                    <div class="price-box"><span class="price">₹149</span><span class="old-price">₹499</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.meesho.com" target="_blank" class="btn">View</a>
-                    <a href="https://api.whatsapp.com/send?text=Check%20Cleaning%20Brush%20on%20Khusi%20Mart:%20₹149%0Ahttps://hanumansuthar67437-netizen.github.io/khusi-mart/" target="_blank" class="btn share-btn">Share 🔗</a>
                 </div>
             </div>
 
